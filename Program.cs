@@ -16,6 +16,12 @@ namespace Ejercicio2
             Console.Write("Ingrese numero: ");
             num = int.Parse(Console.ReadLine());
 
+            while (num <= 0)
+            {
+                Console.Write("ERROR. Reingresar numero!!!: ");
+                num = int.Parse(Console.ReadLine());
+            }
+
             cuadrado = Math.Pow(num, 2);
             cubo = Math.Pow(num, 3);
 
